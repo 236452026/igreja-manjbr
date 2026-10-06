@@ -1,0 +1,16 @@
+# Dependências
+node_modules/
+
+# SEGREDOS: nunca enviar ao GitHub
+.env
+.env.*
+!.env.example
+
+# Build e logs
+dist/
+*.log
+
+# Sistema / editor
+.DS_Store
+Thumbs.db
+.vscode/
