@@ -1,0 +1,14 @@
+/* CSS CRÍTICO (injetado no <head>): cortina de transição entre páginas. */
+/* Cor da cortina: troque em tokens.css (--cor-primaria). O valor #1d2a4d é só reserva. */
+.cortina{position:fixed;inset:0;z-index:200;display:grid;place-items:center;background:var(--cor-primaria,#1d2a4d);color:#fff;pointer-events:none;animation:cortina-falha .01s 4s forwards}
+.cortina-marca{font:800 1.25rem/1 system-ui,sans-serif;letter-spacing:.35em;opacity:1;transition:opacity .4s ease}
+/* Entrada: a cortina desce e libera a página (duração .9s) */
+html.pronto .cortina{transform:translateY(100%);transition:transform .9s cubic-bezier(.76,0,.24,1)}
+html.pronto .cortina-marca{opacity:0}
+/* Saída: a cortina desce cobrindo a página (duração .65s: igual a DURACAO em transicao.js) */
+html.saindo .cortina{animation:cortina-entra .65s cubic-bezier(.76,0,.24,1) forwards;pointer-events:all}
+html.saindo .cortina-marca{opacity:1;transition-delay:.3s}
+@keyframes cortina-entra{from{transform:translateY(-100%)}to{transform:translateY(0)}}
+/* Segurança: se o JavaScript falhar, a cortina some sozinha após 4s */
+@keyframes cortina-falha{to{visibility:hidden}}
+@media (prefers-reduced-motion:reduce),(scripting:none){.cortina{display:none}}

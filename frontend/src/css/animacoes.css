@@ -1,0 +1,60 @@
+/* ESTILOS DAS ANIMAÇÕES E DO HERO. Cores vêm sempre de tokens.css. */
+
+/* Barra de progresso de leitura (topo da tela) */
+.progresso { position: fixed; inset: 0 0 auto 0; height: 3px; z-index: 60; background: var(--cor-destaque); transform: scaleX(0); transform-origin: left; }
+
+/* Títulos revelados palavra por palavra (criados pelo JS) */
+.palavra { display: inline-block; overflow: hidden; vertical-align: top; padding-block: 0.1em; margin-block: -0.1em; }
+.palavra-i { display: inline-block; will-change: transform; }
+
+/* Menu desktop: sublinhado que cresce no hover */
+@media (min-width: 60em) {
+  .nav-list a {
+    background: linear-gradient(var(--cor-destaque), var(--cor-destaque)) left bottom / 0 2px no-repeat;
+    transition: background-size 0.35s ease, color var(--transicao);
+  }
+  .nav-list a:hover { background-size: 100% 2px; }
+}
+
+/* Textos de apoio */
+.eyebrow { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--cor-destaque); margin-bottom: var(--espaco-4); }
+
+/* HERO COM VÍDEO */
+.hero {
+  position: relative; display: grid; align-items: end; overflow: hidden;
+  min-height: calc(100svh - var(--altura-header));
+  background: var(--cor-primaria-escura); color: #fff;
+}
+.hero-midia { position: absolute; inset: 0; will-change: transform; }
+.hero-video, .hero-midia > img { width: 100%; height: 100%; object-fit: cover; }
+.hero-escurecer {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top,
+    color-mix(in srgb, var(--cor-primaria-escura) 90%, transparent),
+    color-mix(in srgb, var(--cor-primaria-escura) 30%, transparent) 60%,
+    color-mix(in srgb, var(--cor-primaria-escura) 55%, transparent));
+}
+.hero-veu { position: absolute; inset: 0; background: var(--cor-primaria-escura); opacity: 0; } /* escurece ao rolar */
+.hero-conteudo { position: relative; padding-block: var(--espaco-12); }
+.hero-texto { max-width: 48rem; }
+.hero-pausar {
+  position: absolute; right: var(--gutter); bottom: var(--espaco-4); z-index: 2;
+  padding: 0.5rem 1rem; font: inherit; font-size: 0.85rem; font-weight: 600; color: #fff; cursor: pointer;
+  background: rgb(0 0 0 / 0.45); border: 1px solid rgb(255 255 255 / 0.5); border-radius: 999px;
+}
+.hero-pausar:hover { background: rgb(0 0 0 / 0.7); }
+
+/* SEÇÕES, CARDS E IMAGENS */
+.secao { padding-block: var(--espaco-12); }
+.secao-clara { background: var(--cor-superficie); }
+.intro-grid { display: grid; gap: var(--espaco-8); align-items: center; }
+@media (min-width: 60em) { .intro-grid { grid-template-columns: 1fr 1fr; } }
+.quadro { overflow: hidden; border-radius: var(--raio); aspect-ratio: 4 / 3; background: var(--cor-borda); }
+.quadro img { width: 100%; height: 120%; object-fit: cover; } /* 120% dá folga para o parallax */
+.cards { display: grid; gap: var(--espaco-6); grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }
+.card {
+  display: block; padding: var(--espaco-6); text-decoration: none;
+  background: var(--cor-fundo); border: 1px solid var(--cor-borda); border-radius: var(--raio);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.card:hover { transform: translateY(-6px); box-shadow: 0 14px 30px rgb(0 0 0 / 0.1); }

@@ -1,0 +1,32 @@
+/* TOKENS DE DESIGN: altere aqui para mudar a identidade visual do site inteiro. */
+:root {
+  /* CORES (proposta inicial: SUBSTITUA pela paleta oficial) */
+  --cor-primaria: #1d2a4d;
+  --cor-primaria-escura: #131c35;
+  --cor-destaque: #e3a82b;
+  --cor-fundo: #faf8f4;
+  --cor-superficie: #ffffff;
+  --cor-texto: #1b1d24;
+  --cor-texto-suave: #4a4f5c;
+  --cor-borda: #e3ded3;
+  --cor-foco: #1d5fd1;
+
+  /* TIPOGRAFIA: Montserrat (auto-hospedada via @fontsource) */
+  --fonte: 'Montserrat Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --texto-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --titulo-xl: clamp(2.25rem, 1.4rem + 4.2vw, 5rem);
+  --titulo-l: clamp(1.75rem, 1.2rem + 2.6vw, 3.25rem);
+  --titulo-m: clamp(1.25rem, 1.05rem + 1vw, 1.75rem);
+
+  /* ESPAÇOS E FORMAS */
+  --espaco-2: 0.5rem;
+  --espaco-4: 1rem;
+  --espaco-6: 1.5rem;
+  --espaco-8: 2rem;
+  --espaco-12: clamp(3rem, 2rem + 4vw, 6rem);
+  --gutter: clamp(1rem, 4vw, 2rem);
+  --largura-max: 1200px;
+  --altura-header: 4.5rem;
+  --raio: 0.75rem;
+  --transicao: 200ms ease;
+}

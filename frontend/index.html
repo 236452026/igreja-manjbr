@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | {{sigla}}</title>
+  <meta name="description" content="[INSERIR DESCRIÇÃO OFICIAL — Home]">
+  <meta name="theme-color" content="#1d2a4d">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script type="module" src="/src/js/main.js"></script>
+</head>
+<body>
+  <!--@header-->
+    <main id="conteudo">
+    <section class="hero" data-hero aria-labelledby="titulo-hero">
+      <div class="hero-midia" data-hero-midia>
+        <!-- SUBSTITUA este vídeo pelo vídeo oficial: frontend/public/videos/video-principal.mp4 -->
+        <!-- SUBSTITUA a imagem de capa (poster) por: frontend/public/images/hero.jpg -->
+        <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="/images/hero.jpg" aria-hidden="true" tabindex="-1">
+          <source src="/videos/video-principal.mp4" type="video/mp4">
+        </video>
+        <div class="hero-escurecer"></div>
+        <div class="hero-veu" data-hero-veu></div>
+      </div>
+      <div class="container hero-conteudo" data-hero-conteudo>
+        <div class="hero-texto">
+          <p class="eyebrow" data-entrada>{{nome}}</p>
+          <h1 id="titulo-hero" data-dividir data-entrada>[INSERIR TEXTO OFICIAL AQUI]</h1>
+          <p data-entrada>[INSERIR TEXTO OFICIAL AQUI]</p>
+          <a class="btn btn-primario" href="/ministerios.html" data-entrada>Conheça os ministérios</a>
+        </div>
+      </div>
+      <button class="hero-pausar" type="button" data-video-pausar>Pausar vídeo</button>
+    </section>
+
+    <section class="secao" aria-labelledby="titulo-intro">
+      <div class="container intro-grid">
+        <div>
+          <p class="eyebrow" data-revelar>Quem somos</p>
+          <h2 id="titulo-intro" data-dividir>[INSERIR TEXTO OFICIAL AQUI]</h2>
+          <p data-revelar>[INSERIR TEXTO OFICIAL AQUI]</p>
+        </div>
+        <div class="quadro" data-revelar>
+          <!-- SUBSTITUA esta imagem pela imagem oficial: frontend/public/images/culto.jpg -->
+          <img data-parallax src="/images/culto.jpg" alt="[INSERIR DESCRIÇÃO DA IMAGEM]" width="800" height="600" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-clara" aria-labelledby="titulo-chamadas">
+      <div class="container">
+        <h2 id="titulo-chamadas" data-dividir>Conheça a igreja</h2>
+        <div class="cards" data-revelar-grupo>
+          <a class="card" href="/nossa-historia.html"><h3>Nossa História</h3><p>[INSERIR TEXTO OFICIAL AQUI]</p></a>
+          <a class="card" href="/ministerios.html"><h3>Ministérios</h3><p>[INSERIR TEXTO OFICIAL AQUI]</p></a>
+          <a class="card" href="/contribua.html"><h3>Contribua</h3><p>[INSERIR TEXTO OFICIAL AQUI]</p></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--@footer-->
+</body>
+</html>
