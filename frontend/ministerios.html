@@ -8,16 +8,24 @@
   <meta name="theme-color" content="#1d2a4d">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <script type="module" src="/src/js/main.js"></script>
+  <script type="module" src="/src/js/ministerios.js"></script>
 </head>
 <body>
   <!--@header-->
   <main id="conteudo">
-    <!-- Lista de ministérios (vinda do MySQL via API) será construída nas Etapas 5 a 7 -->
     <section class="pagina-topo">
       <div class="container">
-         <h1 data-dividir data-entrada>Ministérios</h1>
+        <h1 data-dividir data-entrada>Ministérios</h1>
         <p data-entrada>[INSERIR TEXTO OFICIAL AQUI]</p>
       </div>
+    </section>
+
+    <section class="container" aria-label="Lista de ministérios">
+      <!-- Os cards abaixo vêm do banco MySQL (via API). Veja src/js/ministerios.js -->
+      <div class="ministerios-grid" data-ministerios aria-live="polite" aria-busy="true">
+        <p class="ministerios-status">Carregando ministérios…</p>
+      </div>
+      <noscript><p class="ministerios-status">Ative o JavaScript para ver a lista de ministérios.</p></noscript>
     </section>
   </main>
   <!--@footer-->

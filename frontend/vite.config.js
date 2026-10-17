@@ -32,7 +32,8 @@ function parciais() {
 
 export default defineConfig({
   plugins: [parciais()],
-  server: { port: 5173 },
+    // Em desenvolvimento, repassa /api para o backend local (evita CORS e URL fixa no código)
+  server: { port: 5173, proxy: { '/api': 'http://localhost:3000' } },
   build: {
     rollupOptions: {
       input: {

@@ -1,0 +1,32 @@
+/* ESTILOS DA PÁGINA MINISTÉRIOS (cores vêm de tokens.css). */
+.ministerios-grid {
+  display: grid; gap: var(--espaco-6); padding-bottom: var(--espaco-12);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+}
+.ministerios-status {
+  grid-column: 1 / -1; margin: 0; padding: var(--espaco-8); text-align: center;
+  background: var(--cor-superficie); border: 1px dashed var(--cor-borda); border-radius: var(--raio);
+}
+.ministerios-status .btn { margin-top: var(--espaco-4); }
+
+.ministerio-card {
+  display: flex; flex-direction: column; overflow: hidden;
+  background: var(--cor-superficie); border: 1px solid var(--cor-borda); border-radius: var(--raio);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.ministerio-card:hover { transform: translateY(-6px); box-shadow: 0 14px 30px rgb(0 0 0 / 0.1); }
+
+.ministerio-foto { aspect-ratio: 4 / 3; overflow: hidden; background: var(--cor-borda); }
+.ministerio-foto img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+.ministerio-card:hover .ministerio-foto img { transform: scale(1.05); }
+/* Cartão com inicial (quando não há imagem) */
+.ministerio-inicial {
+  display: grid; place-items: center; width: 100%; height: 100%;
+  font-size: 4rem; font-weight: 800; color: var(--cor-destaque);
+  background: linear-gradient(135deg, var(--cor-primaria), var(--cor-primaria-escura));
+}
+
+.ministerio-corpo { padding: var(--espaco-6); }
+.ministerio-corpo h2 { font-size: var(--titulo-m); margin-bottom: var(--espaco-2); }
+.ministerio-lider { margin-bottom: var(--espaco-2); font-size: 0.9rem; font-weight: 700; color: var(--cor-texto-suave); }
+.ministerio-corpo p:last-child { margin-bottom: 0; }
