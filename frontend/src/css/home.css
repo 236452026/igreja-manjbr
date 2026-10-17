@@ -1,0 +1,32 @@
+/* ESTILOS DA HOME (cores vêm de tokens.css). */
+
+/* NOSSA ESSÊNCIA: título fixo à esquerda no desktop, blocos rolando à direita */
+.essencia-grid { display: grid; gap: var(--espaco-8); }
+@media (min-width: 60em) {
+  .essencia-grid { grid-template-columns: 5fr 7fr; gap: var(--espaco-12); }
+  .essencia-titulo { position: sticky; top: calc(var(--altura-header) + var(--espaco-8)); align-self: start; }
+}
+.essencia-lista { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--espaco-6); }
+.essencia-item {
+  padding: var(--espaco-8); background: var(--cor-superficie);
+  border: 1px solid var(--cor-borda); border-radius: var(--raio);
+}
+.essencia-num { display: block; margin-bottom: var(--espaco-4); font-size: var(--titulo-l); font-weight: 800; color: var(--cor-destaque); }
+
+/* GALERIA */
+.galeria { display: grid; gap: var(--espaco-6); grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); }
+.quadro-alto { aspect-ratio: 3 / 4; }
+@media (min-width: 60em) { .galeria > :nth-child(2) { margin-top: var(--espaco-12); } }
+
+/* VENHA NOS VISITAR */
+.visita { background: var(--cor-primaria); color: #fff; }
+.visita h3 { color: var(--cor-destaque); }
+.visita-grid { display: grid; gap: var(--espaco-8); grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); }
+.visita-grid p { margin-bottom: var(--espaco-2); }
+
+/* CHAMADA FINAL */
+.cta-final { text-align: center; color: #fff; background: linear-gradient(135deg, var(--cor-primaria), var(--cor-primaria-escura)); }
+.cta-final .container { max-width: 52rem; }
+.cta-botoes { display: flex; flex-wrap: wrap; gap: var(--espaco-4); justify-content: center; margin-top: var(--espaco-6); }
+.cta-final .btn-contorno { color: #fff; }
+.cta-final .btn-contorno:hover { background: rgb(255 255 255 / 0.12); }

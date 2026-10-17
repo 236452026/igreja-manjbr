@@ -8,10 +8,12 @@
   <meta name="theme-color" content="#1d2a4d">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <script type="module" src="/src/js/main.js"></script>
+  <script type="module" src="/src/js/home.js"></script>
 </head>
 <body>
   <!--@header-->
-    <main id="conteudo">
+     <main id="conteudo">
+    <!-- 1. HERO COM VÍDEO -->
     <section class="hero" data-hero aria-labelledby="titulo-hero">
       <div class="hero-midia" data-hero-midia>
         <!-- SUBSTITUA este vídeo pelo vídeo oficial: frontend/public/videos/video-principal.mp4 -->
@@ -27,12 +29,13 @@
           <p class="eyebrow" data-entrada>{{nome}}</p>
           <h1 id="titulo-hero" data-dividir data-entrada>[INSERIR TEXTO OFICIAL AQUI]</h1>
           <p data-entrada>[INSERIR TEXTO OFICIAL AQUI]</p>
-          <a class="btn btn-primario" href="/ministerios.html" data-entrada>Conheça os ministérios</a>
+          <a class="btn btn-primario" href="/nossa-historia.html" data-entrada>Conheça nossa história</a>
         </div>
       </div>
       <button class="hero-pausar" type="button" data-video-pausar>Pausar vídeo</button>
     </section>
 
+    <!-- 2. QUEM SOMOS -->
     <section class="secao" aria-labelledby="titulo-intro">
       <div class="container intro-grid">
         <div>
@@ -47,13 +50,80 @@
       </div>
     </section>
 
-    <section class="secao secao-clara" aria-labelledby="titulo-chamadas">
+    <!-- 3. NOSSA ESSÊNCIA (título fixo no desktop) -->
+    <section class="secao secao-clara" aria-labelledby="titulo-essencia">
+      <div class="container essencia-grid">
+        <div class="essencia-titulo">
+          <p class="eyebrow" data-revelar>Nossa essência</p>
+          <h2 id="titulo-essencia" data-dividir>[INSERIR TEXTO OFICIAL AQUI]</h2>
+        </div>
+        <ol class="essencia-lista" data-revelar-grupo>
+          <li class="essencia-item">
+            <span class="essencia-num" aria-hidden="true">01</span>
+            <h3>[INSERIR PILAR 1]</h3>
+            <p>[INSERIR TEXTO OFICIAL AQUI]</p>
+          </li>
+          <li class="essencia-item">
+            <span class="essencia-num" aria-hidden="true">02</span>
+            <h3>[INSERIR PILAR 2]</h3>
+            <p>[INSERIR TEXTO OFICIAL AQUI]</p>
+          </li>
+          <li class="essencia-item">
+            <span class="essencia-num" aria-hidden="true">03</span>
+            <h3>[INSERIR PILAR 3]</h3>
+            <p>[INSERIR TEXTO OFICIAL AQUI]</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 4. GALERIA -->
+    <section class="secao" aria-labelledby="titulo-galeria">
       <div class="container">
-        <h2 id="titulo-chamadas" data-dividir>Conheça a igreja</h2>
-        <div class="cards" data-revelar-grupo>
-          <a class="card" href="/nossa-historia.html"><h3>Nossa História</h3><p>[INSERIR TEXTO OFICIAL AQUI]</p></a>
-          <a class="card" href="/ministerios.html"><h3>Ministérios</h3><p>[INSERIR TEXTO OFICIAL AQUI]</p></a>
-          <a class="card" href="/contribua.html"><h3>Contribua</h3><p>[INSERIR TEXTO OFICIAL AQUI]</p></a>
+        <h2 id="titulo-galeria" data-dividir>[INSERIR TEXTO OFICIAL AQUI]</h2>
+        <div class="galeria" data-revelar-grupo>
+          <div class="quadro quadro-alto">
+            <!-- SUBSTITUA pela imagem oficial: frontend/public/images/galeria-01.jpg -->
+            <img data-parallax src="/images/galeria-01.jpg" alt="[INSERIR DESCRIÇÃO DA IMAGEM]" width="600" height="800" loading="lazy">
+          </div>
+          <div class="quadro quadro-alto">
+            <!-- SUBSTITUA pela imagem oficial: frontend/public/images/galeria-02.jpg -->
+            <img data-parallax src="/images/galeria-02.jpg" alt="[INSERIR DESCRIÇÃO DA IMAGEM]" width="600" height="800" loading="lazy">
+          </div>
+          <div class="quadro quadro-alto">
+            <!-- SUBSTITUA pela imagem oficial: frontend/public/images/galeria-03.jpg -->
+            <img data-parallax src="/images/galeria-03.jpg" alt="[INSERIR DESCRIÇÃO DA IMAGEM]" width="600" height="800" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. VENHA NOS VISITAR (dados vêm de src/config/site.js) -->
+    <section class="secao visita" aria-labelledby="titulo-visita">
+      <div class="container">
+        <h2 id="titulo-visita" data-dividir>Venha nos visitar</h2>
+        <div class="visita-grid" data-revelar-grupo>
+          <div>
+            <h3>Horários</h3>
+            <p>{{horarios}}</p>
+          </div>
+          <div>
+            <h3>Endereço</h3>
+            <p>{{endereco}}</p>
+            <!-- INSIRA aqui o botão "Como chegar" (link do Google Maps) quando houver o endereço oficial -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CHAMADA FINAL -->
+    <section class="secao cta-final" aria-labelledby="titulo-cta">
+      <div class="container">
+        <h2 id="titulo-cta" data-dividir>[INSERIR TEXTO OFICIAL AQUI]</h2>
+        <p data-revelar>[INSERIR TEXTO OFICIAL AQUI]</p>
+        <div class="cta-botoes" data-revelar-grupo>
+          <a class="btn btn-primario" href="/ministerios.html">Conheça os ministérios</a>
+          <a class="btn btn-contorno" href="/contribua.html">Como contribuir</a>
         </div>
       </div>
     </section>
