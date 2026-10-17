@@ -34,5 +34,15 @@ Marque ao preencher. Onde editar está entre parênteses.
 - [ ] Texto da chamada final
 - [ ] Imagens: images/historia-01.jpg e images/historia-02.jpg (e descrições alt)
 
+## Contribua (dados em frontend/src/config/site.js; textos em frontend/contribua.html)
+- [ ] Chave PIX, tipo da chave e nome do favorecido
+- [ ] CNPJ, banco, agência e conta
+- [ ] Imagem do QR Code do PIX (images/pix-qrcode.png)
+- [ ] Textos: abertura, "por que contribuir", instruções de cada forma e passo a passo
+- [ ] Quais formas de contribuir realmente existem (apagar os cards que não se aplicam)
+- [ ] Informações sobre recibo/prestação de contas [NECESSITA DE INFORMAÇÃO OFICIAL]
+- [ ] Revisar a página de contribuição com a liderança/contabilidade da igreja [RECOMENDADA REVISÃO JURÍDICA]
+- [ ] Imagem: images/contribua-01.jpg (e descrição alt)
+
 ## Páginas seguintes
-- [ ] Contribua e Ministérios serão acrescentados nas próximas etapas
+- [ ] Ministérios: dados oficiais vão para o banco MySQL (database/seed.sql)

@@ -8,15 +8,109 @@
   <meta name="theme-color" content="#1d2a4d">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <script type="module" src="/src/js/main.js"></script>
+  <script type="module" src="/src/js/contribua.js"></script>
 </head>
 <body>
   <!--@header-->
   <main id="conteudo">
-    <!-- Conteúdo de Contribua será construído na Etapa 10 -->
+    <!-- 1. TOPO -->
     <section class="pagina-topo">
       <div class="container">
         <h1 data-dividir data-entrada>Contribua</h1>
         <p data-entrada>[INSERIR DADOS OFICIAIS DE CONTRIBUIÇÃO]</p>
+      </div>
+    </section>
+
+    <!-- 2. POR QUE CONTRIBUIR -->
+    <section class="secao" aria-labelledby="titulo-porque">
+      <div class="container intro-grid">
+        <div>
+          <p class="eyebrow" data-revelar>Por que contribuir</p>
+          <h2 id="titulo-porque" data-dividir>[INSERIR TEXTO OFICIAL AQUI]</h2>
+          <p data-revelar>[INSERIR TEXTO OFICIAL AQUI: explicação sobre a contribuição]</p>
+          <p data-revelar>[INSERIR TEXTO OFICIAL AQUI: continuação, se houver]</p>
+        </div>
+        <div class="quadro" data-revelar>
+          <!-- SUBSTITUA esta imagem pela imagem oficial: frontend/public/images/contribua-01.jpg -->
+          <img data-parallax src="/images/contribua-01.jpg" alt="[INSERIR DESCRIÇÃO DA IMAGEM]" width="800" height="600" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. FORMAS OFICIAIS. Apague o card que a igreja não usar. Dados vêm de src/config/site.js -->
+    <section class="secao secao-clara" aria-labelledby="titulo-formas">
+      <div class="container">
+        <h2 id="titulo-formas" data-dividir>Formas de contribuir</h2>
+        <div class="formas-grid" data-revelar-grupo>
+
+          <article class="forma-card">
+            <h3>PIX</h3>
+            <p>[INSERIR INSTRUÇÃO OFICIAL SOBRE O PIX]</p>
+            <dl class="dados">
+              <div><dt>Tipo da chave</dt><dd>{{pixTipo}}</dd></div>
+              <div><dt>Chave PIX</dt><dd class="dado-destaque">{{pixChave}}</dd></div>
+              <div><dt>Favorecido</dt><dd>{{favorecido}}</dd></div>
+            </dl>
+            <button class="btn btn-primario" type="button" data-copiar="{{pixChave}}">Copiar chave PIX</button>
+            <p class="copiar-aviso" role="status" aria-live="polite" data-copiar-aviso></p>
+            <div class="qrcode">
+              <!-- SUBSTITUA pelo QR Code oficial do PIX: frontend/public/images/pix-qrcode.png -->
+              <img src="/images/pix-qrcode.png" alt="[INSERIR DESCRIÇÃO: QR Code do PIX oficial]" width="400" height="400" loading="lazy">
+            </div>
+          </article>
+
+          <article class="forma-card">
+            <h3>Transferência bancária</h3>
+            <p>[INSERIR INSTRUÇÃO OFICIAL SOBRE TRANSFERÊNCIA]</p>
+            <dl class="dados">
+              <div><dt>Banco</dt><dd>{{banco}}</dd></div>
+              <div><dt>Agência</dt><dd>{{agencia}}</dd></div>
+              <div><dt>Conta</dt><dd>{{conta}}</dd></div>
+              <div><dt>Favorecido</dt><dd>{{favorecido}}</dd></div>
+              <div><dt>CNPJ</dt><dd>{{cnpj}}</dd></div>
+            </dl>
+          </article>
+
+          <article class="forma-card">
+            <h3>Presencial</h3>
+            <p>[INSERIR INSTRUÇÃO OFICIAL SOBRE CONTRIBUIÇÃO PRESENCIAL]</p>
+            <dl class="dados">
+              <div><dt>Onde</dt><dd>{{endereco}}</dd></div>
+              <div><dt>Quando</dt><dd>{{horarios}}</dd></div>
+            </dl>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. COMO FAZER. Para mais passos, copie um <li> inteiro. -->
+    <section class="secao" aria-labelledby="titulo-passos">
+      <div class="container">
+        <h2 id="titulo-passos" data-dividir>Como contribuir</h2>
+        <ol class="passos" data-revelar-grupo>
+          <li class="passo"><h3>[INSERIR PASSO 1]</h3><p>[INSERIR TEXTO OFICIAL AQUI]</p></li>
+          <li class="passo"><h3>[INSERIR PASSO 2]</h3><p>[INSERIR TEXTO OFICIAL AQUI]</p></li>
+          <li class="passo"><h3>[INSERIR PASSO 3]</h3><p>[INSERIR TEXTO OFICIAL AQUI]</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 5. AVISO DE SEGURANÇA -->
+    <section class="container" aria-labelledby="titulo-aviso">
+      <div class="aviso" data-revelar>
+        <h2 id="titulo-aviso">Atenção: use apenas os canais oficiais</h2>
+        <p>Faça contribuições somente pelos dados exibidos nesta página. Antes de confirmar um PIX ou transferência, confira se o nome do favorecido corresponde ao informado acima. Em caso de dúvida, fale com a igreja antes de contribuir.</p>
+        <p>[INSERIR ORIENTAÇÃO OFICIAL ADICIONAL, SE HOUVER: recibos, prestação de contas etc.]</p>
+      </div>
+    </section>
+
+    <!-- 6. DÚVIDAS -->
+    <section class="secao duvidas" aria-labelledby="titulo-duvidas" style="margin-top: var(--espaco-12)">
+      <div class="container">
+        <h2 id="titulo-duvidas" data-dividir>Ficou com alguma dúvida?</h2>
+        <p data-revelar>Entre em contato: {{telefone}}</p>
+        <a class="btn btn-primario" href="/ministerios.html">Conheça os ministérios</a>
       </div>
     </section>
   </main>

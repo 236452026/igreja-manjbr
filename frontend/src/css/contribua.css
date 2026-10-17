@@ -1,0 +1,39 @@
+/* ESTILOS DA PÁGINA CONTRIBUA (cores vêm de tokens.css). */
+
+.formas-grid { display: grid; gap: var(--espaco-6); grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr)); align-items: start; }
+.forma-card { padding: var(--espaco-8); background: var(--cor-superficie); border: 1px solid var(--cor-borda); border-radius: var(--raio); border-top: 4px solid var(--cor-destaque); }
+.forma-card h3 { margin-bottom: var(--espaco-4); }
+
+/* Lista de dados (rótulo + valor) */
+.dados { margin: var(--espaco-6) 0; display: grid; gap: var(--espaco-4); }
+.dados div { display: grid; gap: 0.15rem; }
+.dados dt { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--cor-texto-suave); }
+.dados dd { margin: 0; overflow-wrap: anywhere; } /* chaves longas quebram sem causar rolagem lateral */
+.dado-destaque { font-size: 1.1rem; font-weight: 800; color: var(--cor-primaria); }
+
+/* Botão de copiar */
+.forma-card .btn[disabled] { opacity: 0.5; cursor: not-allowed; transform: none; }
+.copiar-aviso { min-height: 1.5em; margin: var(--espaco-2) 0 0; font-size: 0.9rem; font-weight: 600; color: var(--cor-texto-suave); }
+
+/* QR Code */
+.qrcode { width: min(100%, 12rem); margin-top: var(--espaco-4); background: var(--cor-borda); border-radius: var(--raio); overflow: hidden; }
+.qrcode img { width: 100%; height: auto; }
+
+/* Passo a passo */
+.passos { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--espaco-6); counter-reset: passo; }
+.passo { position: relative; padding-left: 4rem; counter-increment: passo; }
+.passo::before {
+  content: counter(passo); position: absolute; left: 0; top: 0; display: grid; place-items: center;
+  width: 2.75rem; height: 2.75rem; font-weight: 800; color: var(--cor-texto); background: var(--cor-destaque); border-radius: 50%;
+}
+.passo h3 { margin-bottom: var(--espaco-2); }
+.passo p:last-child { margin-bottom: 0; }
+
+/* Aviso de segurança */
+.aviso { padding: var(--espaco-8); background: var(--cor-superficie); border: 1px solid var(--cor-borda); border-left: 6px solid var(--cor-destaque); border-radius: var(--raio); }
+.aviso h2 { font-size: var(--titulo-m); }
+.aviso p:last-child { margin-bottom: 0; }
+
+/* Dúvidas */
+.duvidas { text-align: center; color: #fff; background: linear-gradient(135deg, var(--cor-primaria), var(--cor-primaria-escura)); }
+.duvidas .container { max-width: 52rem; }
