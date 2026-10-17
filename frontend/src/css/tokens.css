@@ -1,6 +1,7 @@
 /* TOKENS DE DESIGN: altere aqui para mudar a identidade visual do site inteiro. */
 :root {
   /* CORES (proposta inicial: SUBSTITUA pela paleta oficial) */
+    color-scheme: light; /* impede escurecimento automático do site pelo navegador */
   --cor-primaria: #1d2a4d;
   --cor-primaria-escura: #131c35;
   --cor-destaque: #e3a82b;
