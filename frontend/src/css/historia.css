@@ -1,0 +1,38 @@
+/* ESTILOS DA PÁGINA NOSSA HISTÓRIA (cores vêm de tokens.css). */
+
+/* LINHA DO TEMPO */
+.tempo { position: relative; }
+.tempo-trilho, .tempo-progresso { position: absolute; left: 0.5rem; top: 0; bottom: 0; width: 2px; }
+.tempo-trilho { background: var(--cor-borda); }
+.tempo-progresso { background: var(--cor-destaque); transform-origin: top; }
+.tempo-lista { list-style: none; margin: 0; padding: 0 0 0 2.5rem; display: grid; gap: var(--espaco-8); }
+.tempo-item { position: relative; }
+.tempo-item::before {
+  content: ""; position: absolute; left: -2.5rem; top: 0.45rem; width: 1rem; height: 1rem;
+  background: var(--cor-fundo); border: 3px solid var(--cor-destaque); border-radius: 50%;
+}
+.tempo-ano { display: block; margin-bottom: var(--espaco-2); font-size: var(--titulo-m); font-weight: 800; color: var(--cor-primaria); }
+.tempo-item h3 { margin-bottom: var(--espaco-2); }
+.tempo-item p:last-child { margin-bottom: 0; }
+
+/* PROPÓSITO, MISSÃO E VISÃO */
+.pmv-grid { display: grid; gap: var(--espaco-6); grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); }
+.pmv-card { padding: var(--espaco-8); background: var(--cor-superficie); border: 1px solid var(--cor-borda); border-radius: var(--raio); border-top: 4px solid var(--cor-destaque); }
+.pmv-card h3 { margin-bottom: var(--espaco-4); }
+.pmv-card p:last-child { margin-bottom: 0; }
+
+/* FAIXA DE IMAGEM */
+.quadro-largo { aspect-ratio: 16 / 9; }
+@media (min-width: 60em) { .quadro-largo { aspect-ratio: 21 / 9; } }
+
+/* VALORES */
+.valores-grid { display: grid; gap: var(--espaco-6); grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); }
+.valor { padding: var(--espaco-6); background: var(--cor-superficie); border: 1px solid var(--cor-borda); border-radius: var(--raio); transition: transform 0.35s ease, box-shadow 0.35s ease; }
+.valor:hover { transform: translateY(-6px); box-shadow: 0 14px 30px rgb(0 0 0 / 0.1); }
+.valor h3 { margin-bottom: var(--espaco-2); color: var(--cor-primaria); }
+.valor p:last-child { margin-bottom: 0; }
+
+/* CHAMADA FINAL */
+.historia-cta { text-align: center; color: #fff; background: linear-gradient(135deg, var(--cor-primaria), var(--cor-primaria-escura)); }
+.historia-cta .container { max-width: 52rem; }
+.historia-cta .btn { margin-top: var(--espaco-4); }

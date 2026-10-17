@@ -26,5 +26,13 @@ Marque ao preencher. Onde editar está entre parênteses.
 - [ ] Autorização de uso de imagem das pessoas que aparecem [RECOMENDADA REVISÃO JURÍDICA]
 - [ ] Direitos do vídeo/música [RECOMENDADA REVISÃO JURÍDICA]
 
+## Nossa História (frontend/nossa-historia.html)
+- [ ] Texto de abertura e textos da história
+- [ ] Marcos da trajetória (ano, título, texto). Pode ter mais ou menos de 4
+- [ ] Propósito, Missão e Visão
+- [ ] Valores (nome e texto). Pode ter mais ou menos de 4
+- [ ] Texto da chamada final
+- [ ] Imagens: images/historia-01.jpg e images/historia-02.jpg (e descrições alt)
+
 ## Páginas seguintes
-- [ ] Nossa História, Contribua e Ministérios serão acrescentados nas próximas etapas
+- [ ] Contribua e Ministérios serão acrescentados nas próximas etapas
