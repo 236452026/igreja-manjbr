@@ -46,3 +46,8 @@ Marque ao preencher. Onde editar está entre parênteses.
 
 ## Páginas seguintes
 - [ ] Ministérios: dados oficiais vão para o banco MySQL (database/seed.sql)
+
+## Ano Apostólico (frontend/src/config/site.js, atualizar todo ano)
+- [ ] Ano, título/tema oficial e texto
+- [ ] Imagem: images/ano-apostolico.webp (e descrição alt)
+- [ ] Link "Saiba mais", se houver (comentado em index.html)

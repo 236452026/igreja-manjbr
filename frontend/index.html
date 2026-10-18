@@ -26,6 +26,7 @@
       </div>
       <div class="container hero-conteudo" data-hero-conteudo>
         <div class="hero-texto">
+          <a class="selo-ano" href="#ano-apostolico" data-entrada>Ano Apostólico {{anoApostolico}} <span aria-hidden="true">↓</span></a>
           <p class="eyebrow" data-entrada>{{nome}}</p>
           <h1 id="titulo-hero" data-dividir data-entrada>[INSERIR TEXTO OFICIAL AQUI]</h1>
           <p data-entrada>[INSERIR TEXTO OFICIAL AQUI]</p>
@@ -35,6 +36,23 @@
       <button class="hero-pausar" type="button" data-video-pausar>Pausar vídeo</button>
     </section>
 
+        <!-- ANO APOSTÓLICO (destaque). Textos e ano vêm de src/config/site.js -->
+    <section class="ano-apostolico" id="ano-apostolico" aria-labelledby="titulo-ano">
+      <div class="container ano-grid">
+        <div>
+          <p class="eyebrow" data-revelar>Ano Apostólico</p>
+          <p class="ano-numero" data-revelar>{{anoApostolico}}</p>
+          <h2 id="titulo-ano" data-dividir>{{anoApostolicoTitulo}}</h2>
+          <p data-revelar>{{anoApostolicoTexto}}</p>
+          <!-- OPCIONAL: botão para mais informações. Descomente e coloque o link oficial.
+          <a class="btn btn-primario" href="[INSERIR LINK OFICIAL]">Saiba mais</a> -->
+        </div>
+        <div class="quadro" data-revelar>
+          <!-- SUBSTITUA esta imagem pela imagem do Ano Apostólico: frontend/public/images/ano-apostolico.webp -->
+          <img data-parallax src="/images/ano-apostolico.webp" alt="[INSERIR DESCRIÇÃO DA IMAGEM]" width="800" height="600" loading="lazy">
+        </div>
+      </div>
+    </section>
     <!-- 2. QUEM SOMOS -->
     <section class="secao" aria-labelledby="titulo-intro">
       <div class="container intro-grid">

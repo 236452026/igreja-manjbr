@@ -15,5 +15,9 @@ export const SITE = {
   banco: '[INSERIR BANCO OFICIAL]',                // nome e código do banco
   agencia: '[INSERIR AGÊNCIA OFICIAL]',
   conta: '[INSERIR CONTA OFICIAL]',// rede social oficial
+    // ANO APOSTÓLICO (destaque na Home). Atualize estas 3 linhas a cada ano.
+  anoApostolico: '[INSERIR ANO]',                                           // ex.: 2026
+  anoApostolicoTitulo: '[INSERIR TÍTULO OU TEMA OFICIAL DO ANO APOSTÓLICO]',
+  anoApostolicoTexto: '[INSERIR TEXTO OFICIAL DO ANO APOSTÓLICO]',
   ano: new Date().getFullYear(),
 };

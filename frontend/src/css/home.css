@@ -30,3 +30,28 @@
 .cta-botoes { display: flex; flex-wrap: wrap; gap: var(--espaco-4); justify-content: center; margin-top: var(--espaco-6); }
 .cta-final .btn-contorno { color: #fff; }
 .cta-final .btn-contorno:hover { background: rgb(255 255 255 / 0.12); }
+
+/* ANO APOSTÓLICO: selo no hero + seção de destaque. Cores vêm de tokens.css. */
+.selo-ano {
+  display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: var(--espaco-4);
+  padding: 0.4rem 1rem; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.06em;
+  text-decoration: none; color: var(--cor-texto); background: var(--cor-destaque);
+  border-radius: 999px; transition: transform var(--transicao);
+}
+.selo-ano:hover { transform: translateY(-2px); }
+
+.ano-apostolico {
+  position: relative; overflow: hidden; padding-block: var(--espaco-12); color: #fff;
+  background: linear-gradient(135deg, var(--cor-primaria-escura), var(--cor-primaria));
+}
+.ano-apostolico::before { /* brilho dourado decorativo */
+  content: ""; position: absolute; inset: -30% -10% auto auto; width: 40rem; height: 40rem; border-radius: 50%;
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--cor-destaque) 35%, transparent), transparent);
+  pointer-events: none;
+}
+.ano-grid { position: relative; display: grid; gap: var(--espaco-8); align-items: center; }
+@media (min-width: 60em) { .ano-grid { grid-template-columns: 7fr 5fr; } }
+.ano-numero {
+  margin: 0 0 var(--espaco-4); font-size: clamp(3rem, 2rem + 8vw, 8rem); font-weight: 800;
+  line-height: 1; letter-spacing: -0.04em; color: var(--cor-destaque); overflow-wrap: anywhere;
+}

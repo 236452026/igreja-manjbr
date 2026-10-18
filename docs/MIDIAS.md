@@ -15,3 +15,4 @@ Preencha cada linha. Sem origem/autorização confirmadas, NÃO publique o arqui
 | contribua-01.webp | Contribua | [INSERIR] | [INSERIR] | |
 | pix-qrcode.png | Contribua | Gerado pelo banco/app da igreja | Não se aplica | Conferir se o QR leva ao PIX correto |
 | ministerio-01.webp … 06 | Ministérios | [INSERIR] | [INSERIR] | Menores de idade: exigem autorização dos responsáveis |
+| ano-apostolico.webp | Home (Ano Apostólico) | [INSERIR] | [INSERIR] | Trocar a cada ano |
