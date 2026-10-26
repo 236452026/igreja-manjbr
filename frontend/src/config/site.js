@@ -8,13 +8,13 @@ export const SITE = {
   telefone: '+55 11 92552-2709 (Líder da igreja)',      // telefone/WhatsApp oficial
   instagram: '@manjbr',
       // CONTRIBUIÇÃO (página Contribua). Use SOMENTE dados oficiais, sem aspas dentro do texto.
-  pixTipo: '[INSERIR TIPO DA CHAVE PIX]',          // ex.: CNPJ, e-mail, telefone ou chave aleatória
-  pixChave: '[INSERIR PIX OFICIAL AQUI]',          // chave PIX oficial da igreja
-  favorecido: '[INSERIR NOME DO FAVORECIDO OFICIAL]', // nome que aparece ao fazer o PIX/transferência
+  pixTipo: '(AINDA SEM DADOS)',          // ex.: CNPJ, e-mail, telefone ou chave aleatória
+  pixChave: '(AINDA SEM DADOS)',          // chave PIX oficial da igreja
+  favorecido: '(AINDA SEM DADOS)', // nome que aparece ao fazer o PIX/transferência
   cnpj: '08.852.475/0001-18',             // CNPJ oficial
-  banco: '[INSERIR BANCO OFICIAL]',                // nome e código do banco
-  agencia: '[INSERIR AGÊNCIA OFICIAL]',
-  conta: '[INSERIR CONTA OFICIAL]',                // rede social oficial
+  banco: '(AINDA SEM DADOS)',                // nome e código do banco
+  agencia: '(AINDA SEM DADOS)',
+  conta: '(AINDA SEM DADOS)',                // rede social oficial
     // ANO APOSTÓLICO (destaque na Home). Atualize estas 3 linhas a cada ano.
   anoApostolico: '2026 ANO APOSTÓLICO DE ABRAÃO',                                           // ex.: 2026
   anoApostolicoTitulo: 'ANO APOSTÓLICO DE ABRAÃO',                                           // ex.: 2026

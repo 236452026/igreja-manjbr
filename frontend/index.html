@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home | {{sigla}}</title>
-  <meta name="description" content="[INSERIR DESCRIÇÃO OFICIAL — Home]">
+  <meta name="description" content="Página oficial da MANJBR. Conheça a igreja, sua história, ministérios e saiba como contribuir.">
   <meta name="theme-color" content="#1d2a4d">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <script type="module" src="/src/js/main.js"></script>
@@ -28,8 +28,8 @@
         <div class="hero-texto">
           <a class="selo-ano" href="#ano-apostolico" data-entrada>Ano Apostólico {{anoApostolico}} <span aria-hidden="true">↓</span></a>
           <p class="eyebrow" data-entrada>{{nome}}</p>
-          <h1 id="titulo-hero" data-dividir data-entrada>[INSERIR TEXTO OFICIAL AQUI]</h1>
-          <p data-entrada>[INSERIR TEXTO OFICIAL AQUI]</p>
+          <h1 id="titulo-hero" data-dividir data-entrada>{{slogan}}</h1>
+          <p data-entrada>Conheça a história da igreja, seus valores e missão.</p>
           <a class="btn btn-primario" href="/nossa-historia.html" data-entrada>Conheça nossa história</a>
         </div>
       </div>
@@ -49,7 +49,7 @@
         </div>
         <div class="quadro" data-revelar>
           <!-- SUBSTITUA esta imagem pela imagem do Ano Apostólico: frontend/public/images/ano-apostolico.webp -->
-          <img data-parallax src="/images/ano-apostolico.webp" alt="[INSERIR DESCRIÇÃO DA IMAGEM]" width="800" height="600" loading="lazy">
+          <img data-parallax src="/images/ano-apostolico.webp" alt="Ano Apostólico" width="800" height="600" loading="lazy">
         </div>
       </div>
     </section>
@@ -58,12 +58,12 @@
       <div class="container intro-grid">
         <div>
           <p class="eyebrow" data-revelar>Quem somos</p>
-          <h2 id="titulo-intro" data-dividir>[INSERIR TEXTO OFICIAL AQUI]</h2>
-          <p data-revelar>[INSERIR TEXTO OFICIAL AQUI]</p>
+          <h2 id="titulo-intro" data-dividir>MANJBR</h2>
+          <p data-revelar>IRMÃOS EM CRISTO E NA MESMA FÉ.</p>
         </div>
         <div class="quadro" data-revelar>
           <!-- SUBSTITUA esta imagem pela imagem oficial: frontend/public/images/culto.webp -->
-          <img data-parallax src="/images/culto.webp" alt="[INSERIR DESCRIÇÃO DA IMAGEM]" width="800" height="600" loading="lazy">
+          <img data-parallax src="/images/culto.webp" alt="Culto" width="800" height="600" loading="lazy">
         </div>
       </div>
     </section>
@@ -73,23 +73,23 @@
       <div class="container essencia-grid">
         <div class="essencia-titulo">
           <p class="eyebrow" data-revelar>Nossa essência</p>
-          <h2 id="titulo-essencia" data-dividir>[INSERIR TEXTO OFICIAL AQUI]</h2>
+          <h2 id="titulo-essencia" data-dividir>Fé em Cristo</h2>
         </div>
         <ol class="essencia-lista" data-revelar-grupo>
           <li class="essencia-item">
             <span class="essencia-num" aria-hidden="true">01</span>
-            <h3>[INSERIR PILAR 1]</h3>
-            <p>[INSERIR TEXTO OFICIAL AQUI]</p>
+            <h3>Fé</h3>
+            <p>A fé é a confiança e a crença em Deus e em Seus promessas.</p>
           </li>
           <li class="essencia-item">
             <span class="essencia-num" aria-hidden="true">02</span>
-            <h3>[INSERIR PILAR 2]</h3>
-            <p>[INSERIR TEXTO OFICIAL AQUI]</p>
+            <h3>Amor</h3>
+            <p>O amor é o sentimento de afeição e cuidado que se tem por alguém.</p>
           </li>
           <li class="essencia-item">
             <span class="essencia-num" aria-hidden="true">03</span>
-            <h3>[INSERIR PILAR 3]</h3>
-            <p>[INSERIR TEXTO OFICIAL AQUI]</p>
+            <h3>Esperança</h3>
+            <p>A esperança é a expectativa e o desejo de algo bom acontecer no futuro.</p>
           </li>
         </ol>
       </div>
@@ -98,19 +98,19 @@
     <!-- 4. GALERIA -->
     <section class="secao" aria-labelledby="titulo-galeria">
       <div class="container">
-        <h2 id="titulo-galeria" data-dividir>[INSERIR TEXTO OFICIAL AQUI]</h2>
+        <h2 id="titulo-galeria" data-dividir>Algumas fotos</h2>
         <div class="galeria" data-revelar-grupo>
           <div class="quadro quadro-alto">
             <!-- SUBSTITUA pela imagem oficial: frontend/public/images/galeria-01.webp -->
-            <img data-parallax src="/images/galeria-01.webp" alt="[INSERIR DESCRIÇÃO DA IMAGEM]" width="600" height="800" loading="lazy">
+            <img data-parallax src="/images/galeria-01.webp" alt="Foto 1" width="600" height="800" loading="lazy">
           </div>
           <div class="quadro quadro-alto">
             <!-- SUBSTITUA pela imagem oficial: frontend/public/images/galeria-02.webp -->
-            <img data-parallax src="/images/galeria-02.webp" alt="[INSERIR DESCRIÇÃO DA IMAGEM]" width="600" height="800" loading="lazy">
+            <img data-parallax src="/images/galeria-02.webp" alt="Foto 2" width="600" height="800" loading="lazy">
           </div>
           <div class="quadro quadro-alto">
             <!-- SUBSTITUA pela imagem oficial: frontend/public/images/galeria-03.webp -->
-            <img data-parallax src="/images/galeria-03.webp" alt="[INSERIR DESCRIÇÃO DA IMAGEM]" width="600" height="800" loading="lazy">
+            <img data-parallax src="/images/galeria-03.webp" alt="Foto 3" width="600" height="800" loading="lazy">
           </div>
         </div>
       </div>
@@ -137,8 +137,8 @@
     <!-- 6. CHAMADA FINAL -->
     <section class="secao cta-final" aria-labelledby="titulo-cta">
       <div class="container">
-        <h2 id="titulo-cta" data-dividir>[INSERIR TEXTO OFICIAL AQUI]</h2>
-        <p data-revelar>[INSERIR TEXTO OFICIAL AQUI]</p>
+        <h2 id="titulo-cta" data-dividir>Venha fazer parte da nossa família</h2>
+        <p data-revelar>Estamos felizes em tê-lo conosco e esperamos que você se sinta bem-vindo em nossa comunidade.</p>
         <div class="cta-botoes" data-revelar-grupo>
           <a class="btn btn-primario" href="/ministerios.html">Conheça os ministérios</a>
           <a class="btn btn-contorno" href="/contribua.html">Como contribuir</a>
